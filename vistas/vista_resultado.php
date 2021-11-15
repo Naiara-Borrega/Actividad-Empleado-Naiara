@@ -1,9 +1,13 @@
 <?php
-      include "views/cabecera.php";
-      
-      /*echo "<div class='texto' />";
-      echo $resultado;
-      echo "</div>";*/
-      
-      include "views/pie.php";
+    include "cabecera.php";
+?>
+
+<div class='resultado'>
+<?php
+    echo $resultado;
+?>
+</div>
+
+<?php
+    include "pie.php";
 ?>
