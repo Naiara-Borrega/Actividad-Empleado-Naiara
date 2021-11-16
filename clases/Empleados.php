@@ -1,5 +1,5 @@
 <?php
-    class Empleado{
+    abstract class Empleado{
         private $nombre;
         private $apellido;
         private $numeroSeguridadSocial;
@@ -37,5 +37,7 @@
         public function mostrar(){
             echo "Este empleado $this->nombre $this->apellido con el NSS: $this->numeroSeguridadSocial <br>"; 
         }
+
+        abstract function ingresos($sueldo, $dietas){}
     }
 ?>
