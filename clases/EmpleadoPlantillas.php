@@ -1,7 +1,13 @@
 <?php
     class EmpleadoPlantilla extends Empleado{
-        private $sueldo;
-        private $dietas;
+        protected $sueldo;
+        protected $dietas;
+
+        public function __construct($nombre, $apellido, $numeroSeguridadSocial, $sueldo, $dietas){
+            parent::__construct($nombre, $apellido, $numeroSeguridadSocial);
+            $this->sueldo = $sueldo;
+            $this->dietas = $dietas;
+        }
 
         public function getSueldo(){
             return $this->sueldo;
@@ -21,12 +27,11 @@
 
         public function mostrar(){
             parent::mostrar();
-            echo "Los igresos" . $this->ingresos() . "<br>"; 
+            echo "Los igresos " . $this->ingresos() . "<br>"; 
         }
 
-        public function ingresos($sueldo, $dietas){
-            parent::ingresos();
-            return $sueldo * $dietas;
+        public function ingresos(){
+            return $this->sueldo * $this->dietas;
         }
     }
 ?>

@@ -1,8 +1,15 @@
 <?php
     class EmpleadoPorComision extends Empleado{
-        private $horas;
-        private $tarifa;
-        private $base;
+        protected $horas;
+        protected $tarifa;
+        protected $base;
+
+        public function __construct($nombre, $apellido, $numeroSeguridadSocial, $horas, $tarifa, $base){
+            parent::__construct($nombre, $apellido, $numeroSeguridadSocial);
+            $this->horas = $horas;
+            $this->tarifa = $tarifa;
+            $this->base = $base;
+        }
 
         public function getHoras(){
             return $this->horas;
@@ -30,12 +37,11 @@
 
         public function mostrar(){
             parent::mostrar();
-            echo "Los igresos" . $this->ingresos() . "<br>";
+            echo "Los igresos " . $this->ingresos() . "<br>";
         }
 
-        public function ingresos($sueldo, $dietas){
-            parent::ingresos();
-            return ($base + $horas) * $tarifa;
+        public function ingresos(){
+            return ($this->base + $this->horas) * $this->tarifa;
         }
     }
 ?>

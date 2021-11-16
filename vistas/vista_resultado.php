@@ -3,9 +3,9 @@
 ?>
 
 <div class='resultado'>
-<?php
-    echo $resultado;
-?>
+    <?php
+        echo $resultado;
+    ?>
 </div>
 
 <?php

@@ -38,6 +38,6 @@
             echo "Este empleado $this->nombre $this->apellido con el NSS: $this->numeroSeguridadSocial <br>"; 
         }
 
-        abstract function ingresos($sueldo, $dietas){}
+        abstract function ingresos();
     }
 ?>
