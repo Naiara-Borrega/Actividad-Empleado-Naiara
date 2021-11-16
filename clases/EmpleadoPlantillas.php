@@ -3,14 +3,6 @@
         private $sueldo;
         private $dietas;
 
-        public function __construct($nombre, $apellido, $numeroSeguridadSocial, $sueldo, $dietas){
-            $this->nombre = $nombre;
-            $this->apellido = $apellido;
-            $this->numeroSeguridadSocial = $numeroSeguridadSocial;
-            $this->sueldo = $sueldo;
-            $this->dietas = $dietas;
-        }
-
         public function getSueldo(){
             return $this->sueldo;
         }

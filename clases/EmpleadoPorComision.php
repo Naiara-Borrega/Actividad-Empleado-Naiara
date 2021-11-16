@@ -4,15 +4,6 @@
         private $tarifa;
         private $base;
 
-        public function __construct($nombre, $apellido, $numeroSeguridadSocial, $horas, $tarifa, $base){
-            $this->nombre = $nombre;
-            $this->apellido = $apellido;
-            $this->numeroSeguridadSocial = $numeroSeguridadSocial;
-            $this->horas = $horas;
-            $this->tarifa = $tarifa;
-            $this->base = $base;
-        }
-
         public function getHoras(){
             return $this->horas;
         }
