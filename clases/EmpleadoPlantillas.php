@@ -1,4 +1,6 @@
 <?php
+    namespace EmpleadoPlantilla;
+
     class EmpleadoPlantilla extends Empleado{
         protected $sueldo;
         protected $dietas;

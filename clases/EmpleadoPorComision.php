@@ -1,4 +1,6 @@
 <?php
+    namespace EmpleadoComision;
+
     class EmpleadoPorComision extends Empleado{
         protected $horas;
         protected $tarifa;

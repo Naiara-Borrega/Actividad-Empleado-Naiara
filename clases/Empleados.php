@@ -1,4 +1,6 @@
 <?php
+    namespace Empleado;
+      
     abstract class Empleado{
         private $nombre;
         private $apellido;
